@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head id="head">
+    <title>Test test test</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="CSS-inschrijving/background.css">
+    <link rel="stylesheet" href="CSS-inschrijving/header.css">
+    <link rel="stylesheet" href="CSS-inschrijving/animations/pageAnimation.css">
+    <link rel="stylesheet" href="CSS-inschrijving/laptop/laptop.css">
+    <link rel="stylesheet" href="CSS-inschrijving/laptop/page1.css">
+    <link rel="stylesheet" href="CSS-inschrijving/laptop/page2.css">
+    <link rel="stylesheet" href="CSS-inschrijving/laptop/page3.css">
+    <link rel="stylesheet" href="CSS-inschrijving/phone.css">
+
+
+</head>
+
+<header class="header-grid-container">
+
+    <div class="header-grid-item header-logo">
+        <a href='https://www.thehouseoftyping.nl/' title='ECO House of Typing' style='text-decoration: none'>
+            <img src='https://www.thehouseoftyping.nl/assets/dist/images/layout/logo-eco-house-of-typing.png' height="80px" width="80px" alt='Eco The House of Typing'>
+        </a>
+    </div>
+
+    <div class="header-grid-item header-text">
+        <span id="type-text">...</span>
+        <span class="blinking-cursor">_</span>
+    </div>
+
+    <div class="header-grid-item header-btn">
+        <button class="home-btn" href='https://www.thehouseoftyping.nl/'>
+        <a>Terug naar</a>
+        <br>
+        <a>The House of Typing</a></button>
+    </div>
+
+</header>
+
+
+
+<body>
+
+
+    <div class="phone-container phone-containermove" id="phone" style="display: none;">
+        <!--    phoneMove is the grabpoint for moving the phone around  -->
+            <div id="phoneMove">
+              <div class="phone-speaker"></div>
+            </div>
+        
+            <div class="phone-screen">
+        
+              <div class="phone-header">
+        
+                <div class="phone-extra-person">
+                  <div class="added selected">1</div>
+                  <div class="add plus">+</div>
+                </div>
+                <div class=" phone-close" id="phoneClose"></div>
+        
+              </div>
+        
+              <div class="phone-input-field" id="inputCheck">
+        
+                <h3 class="phone-title">Extra cursist: <span class="personNum">1</span></h3>
+                <div class="feedback" style="display: none;">fff</div>
+        
+                <select class="phone-input" name="gender" id="gender" required>
+                  <option value="" disabled selected hidden>Kies uw geslacht</option>
+                  <option value="man">Man</option>
+                  <option value="woman">vrouw</option>
+                  <option value="other">Anders</option>
+                </select>
+        
+                <input class="phone-input" type="date" id="#dob" name="dob" placeholder="Geboortedatum" required>
+                <input class="phone-input" type="text" id="#fName" name="fName" placeholder="Voornaam" required>
+                <input class="phone-input" type="text" id="#mName" name="mName" placeholder="Tussenvoegsel" required>
+                <input class="phone-input" type="text" id="#lName" name="lName" placeholder="Achternaam" required>
+        
+                <button class="add" form="inputCheck"><span>Extra cursist toevoegen</span></button>
+              </div>
+        
+              <div class="phone-delete-button">
+                <button class="button remove">
+                  <div class="icon remove">
+                    <svg class="top remove">
+                      <use xlink:href="#top">
+                    </svg>
+                    <svg class="bottom remove">
+                      <use xlink:href="#bottom">
+                    </svg>
+                  </div>
+                  <span class="remove" style="margin-left: 1em; ">Verwijderen</span>
+                </button>
+                <svg xmlns="http://www.w3.org/2000/svg" class="remove" style="display: none;">
+                  <symbol class="remove" xmlns="http://www.w3.org/2000/svg " viewBox="0 0 24 24" id="top">
+                    <path class="remove " d="M15,4 C15.5522847,4 16,4.44771525 16,5 L16,6 L18.25,6 C18.6642136,6 19,6.33578644 19,6.75 C19,7.16421356 18.6642136,7.5 18.25,7.5 L5.75,7.5 C5.33578644,7.5 5,7.16421356 5,6.75 C5,6.33578644 5.33578644,6
+                                5.75,6 L8,6 L8,5 C8,4.44771525 8.44771525,4 9,4 L15,4 Z M14,5.25 L10,5.25 C9.72385763,5.25 9.5,5.47385763 9.5,5.75 C9.5,5.99545989 9.67687516,6.19960837 9.91012437,6.24194433 L10,6.25 L14,6.25 C14.2761424,6.25 14.5,6.02614237 14.5,5.75
+                                C14.5,5.50454011 14.3231248,5.30039163 14.0898756,5.25805567 L14,5.25 Z ">
+        
+                    </path>
+                  </symbol>
+                  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="bottom">
+                    <path d="M16.9535129,8 C17.4663488,8 17.8890201,8.38604019 17.9467852,8.88337887 L17.953255,9.02270969 L17.953255,9.02270969 L17.5309272,18.3196017 C17.5119599,18.7374363
+                                17.2349366,19.0993109 16.8365446,19.2267053 C15.2243631,19.7422351 13.6121815,20 12,20 C10.3878264,20 8.77565288,19.7422377 7.16347932,19.226713 C6.76508717,19.0993333 6.48806648,18.7374627 6.46907425,18.3196335 L6.04751853,9.04540766
+                                C6.02423185,8.53310079 6.39068134,8.09333626 6.88488406,8.01304774 L7.02377738,8.0002579 L16.9535129,8 Z M9.75,10.5 C9.37030423,10.5 9.05650904,10.719453 9.00684662,11.0041785 L9,11.0833333 L9,16.9166667 C9,17.2388328 9.33578644,17.5
+                                9.75,17.5 C10.1296958,17.5 10.443491,17.280547 10.4931534,16.9958215 L10.5,16.9166667 L10.5,11.0833333 C10.5,10.7611672 10.1642136,10.5 9.75,10.5 Z M14.25,10.5 C13.8703042,10.5 13.556509,10.719453 13.5068466,11.0041785 L13.5,11.0833333
+                                L13.5,16.9166667 C13.5,17.2388328 13.8357864,17.5 14.25,17.5 C14.6296958,17.5 14.943491,17.280547 14.9931534,16.9958215 L15,16.9166667 L15,11.0833333 C15,10.7611672 14.6642136,10.5 14.25,10.5 Z ">
+        
+                    </path>
+                  </symbol>
+                </svg>
+              </div>
+        
+            </div>
+        
+            <div class="phone-home-button "></div>
+        
+          </div>
+        
+
+    <div class="laptop-body" id="laptop">
+
+        <div class="laptop-container">
+
+            <div class="laptop laptop-screen">
+
+                <div class="screen-container">
+                    <!-- Loading animation between pages -->
+                    <div class="loading-animation" id="loadingAnimation" style="display:none">
+                        <div class="wrapper">
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="shadow"></div>
+                            <div class="shadow"></div>
+                            <div class="shadow"></div>
+                            <span>laden...</span>
+                        </div>
+                    </div>
+                    <!-- First page on the laptop -->
+                    <div class="first-screen" id="firstScreen">
+
+                        <div class="screen1 first-screen-titel">
+                            <b>Inschrijfing</b>
+                        </div>
+
+                        <div class="screen1 first-screen-option">
+
+                            <div class="option-container">
+
+                                <div style="align-self: center; justify-self: center; ">
+                                    <b style="color: #01ace4; font-size: calc(12px + 2.5vh);">Kies een versie:</b>
+                                </div>
+
+                                <div class="option">
+
+                                    <div class="option-label">
+                                        <input type="radio" id="radioChield" name="radio-select" value="child" checked="checked" />
+                                        <label for="radioChield">Kind</label>
+                                    </div>
+
+                                    <div class="option-label">
+                                        <input type="radio" id="radioAdult" name="radio-select" value="adult">
+                                        <label for="radioAdult">Volwassen</label>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="option-container">
+                                <div style="align-self: center; justify-self: center; ">
+                                    <h2 style="color: #01ace4; font-size: calc(12px + 2.5vh);">Heeft u een code:</h2>
+                                </div>
+                                <div class="option">
+                                    <div class="option-label">
+                                        <input type="radio" name="radio-code" id="codeYes" class="codeQuestion" value="yesCode" checked="checked" />
+                                        <label for="codeYes">Ja</label>
+                                    </div>
+                                    <div class="option-label">
+                                        <input type="radio" name="radio-code" id="codeNo" class="codeQuestion" value="noCode" />
+                                        <label for="codeNo">Nee</label>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="screen1 first-screen-input" id="codeInput">
+                            <div class="input-code-container" style="text-align: center; color: #01ace4; margin-bottom: 10px;">
+                                <b style="font-size: calc(12px + 2vh); align-self: center;">Vul hier uw code in.</b>
+                            </div>
+
+                            <div class="input-code-container">
+                                <div class="input-code">
+                                    <input placeholder="A " maxlength='1' minlength='1' size='1' style='text-transform: uppercase;' onkeypress='return /[a-z]/i.test(event.key)' required>
+                                    <input placeholder="B " minlength='1' maxlength='1' size='1' style='text-transform: uppercase;' onkeypress='return /[a-z]/i.test(event.key)' required>
+                                    <input placeholder="C " minlength='1' maxlength='1' size='1' style='text-transform: uppercase;' onkeypress='return /[a-z]/i.test(event.key)' required>
+                                    <input placeholder="D " minlength='1' maxlength='1' size='1' style='text-transform: uppercase;;' onkeypress='return /[a-z]/i.test(event.key)' required>
+                                    <input class='input-long' placeholder="12345 " minlength='5' maxlength='5' size='12' onkeypress='return /^[0-9]*$/i.test(event.key)' required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="screen1 first-screen-btn">
+                            <div class="sign-btn" id="noCodeBtn">
+                                <div>
+                                    <button class="continue-application" id="p1Button">
+                                        <div>
+                                            <div class="pencil "></div>
+                                            <div class="folder ">
+                                                <div class="top ">
+                                                    <svg viewBox="0 0 24 27 ">
+                                                        <path
+                                                            d="M1,0 L23,0 C23.5522847,-1.01453063e-16 24,0.44771525 24,1 L24,8.17157288 C24,8.70200585 23.7892863,9.21071368 23.4142136,9.58578644 L20.5857864,12.4142136 C20.2107137,12.7892863 20,13.2979941 20,13.8284271
+                                             L20,26 C20,26.5522847 19.5522847,27 19,27 L1,27 C0.44771525,27 6.76353751e-17,26.5522847 0,26 L0,1 C-6.76353751e-17,0.44771525 0.44771525,1.01453063e-16 1,0 Z ">
+                                                        </path>
+                                                    </svg>
+                                                </div>
+                                                <div class="paper "></div>
+                                            </div>
+                                        </div>
+                                        Verder met inschrijven
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Second page on the laptop -->
+                    <div class="second-screen" id="secondScreen" style="display: none;">
+
+                        <div class="screen2 titel2">
+                            <div class="titel-container">
+                                <h1 style="font-size: calc(16px + 3vh); font-weight: bold;">Gegevens cursist</h1>
+                                <b style="font-size: calc(12px + 1vh); font-weight: bold; border-bottom: 2px solid white;">Testschool uit Bergen op Zoom</b>
+
+                            </div>
+                        </div>
+
+                        <div class="screen2">
+                            <div class="input-grid">
+                                <div class="input-second-page">
+                                    <input type="text " name=" " id=" " placeholder="Voornaam" required>
+                                </div>
+                                <div class="input-second-page">
+                                    <input type="text " name=" " id=" " placeholder="Tussenvoegsel" required>
+                                </div>
+                                <div class="input-second-page">
+                                    <input type="d " name=" " id=" " placeholder="Achternaam" required>
+                                </div>
+                            </div>
+                            <div class="input-grid">
+                                <div class="input-second-page">
+                                    <input type="date" name=" " id=" " placeholder="Geboortedatum" required>
+                                </div>
+                                <div class="input-second-page">
+                                    <select name="gender" id="gender" required>
+                                        <option value="" disabled selected hidden>Kies uw geslacht</option>
+                                        <option value="man ">Man</option>
+                                        <option value="vrouw ">Vrouw</option>
+                                        <option value="anders ">Anders</option>
+                
+                                    </select>
+                                </div>
+                                <div class="input-second-page">
+                                    <input type="text" name=" " id=" " placeholder="Email" required>
+                                </div>
+                            </div>
+                            <div class="input-grid">
+                                <div class="input-second-page">
+                                    <input type="text " name=" " id=" " placeholder="Telefoon" required>
+                                </div>
+                                <div class="input-second-page">
+                                    <input type="text " name=" " id=" " placeholder="Plaats" required>
+                                </div>
+                                <div class="input-second-page">
+                                    <input type="text " name=" " id=" " placeholder="Straat" required>
+                                </div>
+                            </div>
+                            <div class="input-grid">
+                                <div class="input-second-page">
+                                    <input type="text " name=" " id=" " placeholder="huis Nr." required>
+                                </div>
+                                <div class="input-second-page">
+                                    <input type="text " name=" " id=" " placeholder="Postcode" required>
+                                </div>
+                                <div class="input-second-page">
+                                    <input type="text" name=" " id=" " placeholder="Naam ouder/verzorger" required>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="screen2">
+
+                            <div class="btn-extra-persone" id="extraPersone">
+                                <button>
+                                   
+                                   <b>Extra cursist toevoegen: Costen + €xx,xx</b>
+                                 
+                                </button>
+
+                            </div>
+                        </div>
+
+                        <div class="screen2 titel2">
+                            <div class="container-page-button">
+                                <button class="page-back-button" id="backP1Button" style="border: 2px solid white; max-height: 50% ;">
+                                    <span><a> Stap terug</a> </span>
+                                    <p>🡰 Stap terug</p>
+                                </button>
+                            </div>
+                            <div class="container-page-button">
+                                <b style="font-size: calc(10px + 1vh); margin-top: 3%;">Totaal aantaal cursist(en): x</b>
+                                <b style="font-size: calc(10px + 1vh);">Kosten voor extra cursist is: €xx.xx</b>
+                                <b style="font-size: calc(10px + 1vh);">Uw huidige Totaal bedrag is: €xx.xx</b>
+                            </div>
+                            <div class="container-page-button">
+                                <button class="button-ready" id="p2Button">
+                                    <div class="paper left"></div>
+                                    <div class="paper middle"></div>
+                                    <div class="paper right"></div>
+                                    <div class="inner">
+                                        <div class="zipper">
+                                            <div class="line"></div>
+                                            <div class="gradient"></div>
+                                        </div>
+                                        <span>Afronden</span>
+                                        <svg viewBox="0 0 20 16">
+                                            <polyline points="3 8.75 7.75 13.5 17 2.5"></polyline>
+                                        </svg>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <!-- Third page on the laptop -->
+                    <div class="third-screen" id="thirdScreen" style="display: none;">
+
+                        <div class="screen3 third-screen-titel">
+                            <div class="titel-container">
+                                <h1 style="font-size: calc(16px + 3vh); font-weight: bold;">Afrekenen</h1>
+                                <b style="font-size: calc(8px + 1.5vh); font-weight: bold;">Kies hieronder hoe je de training wilt betalen.
+                                    € xx,xx <br>(Bij betaling middels iDeal)</b>
+
+                            </div>
+                        </div>
+
+                        <div class="screen3 third-screen-payment">
+                            <div class="payment-grid payment-select-grid">
+
+                                <div class="">
+                                    <h2 style="font-size: calc(12px + 1.5vh); text-align: center; color:#01ace4;">Betaalwijze:</h2>
+                                </div>
+
+                                <div class="payment-select">
+
+                                    <class class="payment-final" id="PaySelect">
+                                        <input type="radio" id="OnePayment" name="radio-select" value="1x" checked="checked">
+                                        <label for="OnePayment">In een keer: <br> €xx,xx</label>
+                                    </class>
+
+                                    <class class="payment-final" id="PaySelect">
+                                        <input type="radio" id="FourPayments" name="radio-select" value="4x">
+                                        <label for="FourPayments">In 4 termijnen: <br> €xx.xx</label>
+                                    </class>
+
+                                    <div class="payment-final" id="PaySelect">
+                                        <input type="radio" id="TwelfePayments" name="radio-select" value="12x">
+                                        <label for="TwelfePayments">In 12 termijnen: <br> €xx.xx</label>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="payment-grid payment-input-grid" id="directPay">
+
+                                <div style="align-self: center;">
+                                    <h2 style="font-size: calc(12px + 2vh); text-align: center; color:#01ace4;">Kies een bank:</h2>
+                                </div>
+
+                                <div class="payment-input">
+                                    <select name='bank' id='bank' required>
+                                        <option value='' selected>Kies een bank</option>
+                                        <option value='ideal_ABNANL2A'>ABN AMRO</option>
+                                        <option value='ideal_INGBNL2A'>ING</option>
+                                        <option value='ideal_RABONL2U'>Rabobank</option>
+                                        <option value='ideal_ASNBNL21'>ASN Bank</option>
+                                        <option value='ideal_BUNQNL2A'>bunq</option>
+                                        <option value='ideal_HANDNL2A'>Handelsbanken</option>
+                                        <option value='ideal_KNABNL2H'>Knab</option>
+                                        <option value='ideal_MOYONL21'>Moneyou</option>
+                                        <option value='ideal_RBRBNL21'>RegioBank</option>
+                                        <option value='ideal_SNSBNL2A'>SNS</option>
+                                        <option value='ideal_TRIONL2U'>Triodos Bank</option>
+                                        <option value='ideal_FVLBNL22'>van Lanschot</option>
+                                    </select>
+                                </div>
+
+                            </div>
+
+                            <div class="payment-grid payment-input-grid" id="overTimePay">
+
+                                <div style="align-self: center;">
+                                    <h2 style="font-size: calc(12px + 2vh); text-align: center; color:#01ace4;">Betaling geschied via factuur.</h2>
+                                </div>
+
+                                <div class="payment-input">
+                                    <input type="text" name="" id="" placeholder="Naam rekeninghouder" required>
+                                </div>
+
+                                <div class="payment-input">
+                                    <input type="text" name="" id="" placeholder="IBAN" required>
+                                </div>
+
+                            </div>
+
+                            <div class="payment-grid terms-and-service-grid" id="termsSevice">
+                                <div class="terms-and-service">
+                                    <p>
+                                        <input class="myCheckbox" type='checkbox' name='terms' value='1' required id="termsPayment"> Ik ga akkoord met de
+                                        <a href='https://www.thehouseoftyping.nl/downloads/algemene-voorwaarden.pdf' target='_blank' title='Algemene inschrijfvoorwaarden' style='color: white !important; text-decoration: none !important'>
+                                            <b>algemene inschrijfvoorwaarden.</b>
+                                        </a><br> Ik verplicht mij tot de betaling van het gehele cursus/begeleidingsbedrag en ik geef mijn toestemming aan The House of Typing om de van mij bekende gegevens te gebruiken ten behoeve van de cursusadministratie
+                                        en van de rapportage.
+                                    </p>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="screen3 third-screen-buttons">
+                            <div class="container-page-button">
+                                <button class="page-back-button" id="backP2Button" style="border: 2px solid white; max-height: 50%;">
+                                    <span><a>🡰 Stap terug</a> </span>
+                                    <p>🡰 Stap terug</p>
+                                </button>
+                            </div>
+                            <div class="container-page-button">
+
+                                <b style="color: white; margin-top: 5%; font-size: calc(10px + 1vh);">Totaal aantaal cursist(en): x</b>
+                                <b style="color: white;font-size: calc(10px + 1vh);">Uw huidige Totaal bedrag is: €xx.xx</b>
+                            </div>
+                            <div class="container-page-button">
+                                <button class="button-ready" id="payment">
+                                    <div class="paper left"></div>
+                                    <div class="paper middle"></div>
+                                    <div class="paper right"></div> 
+                                    <div class="inner">
+                                        <div class="zipper">
+                                            <div class="line"></div>
+                                            <div class="gradient"></div>
+                                        </div>
+                                        <span>Betalen</span>
+                                        <svg viewBox="0 0 20 16">
+                                            <polyline points="3 8.75 7.75 13.5 17 2.5"></polyline>
+                                        </svg>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="laptop laptop-keyboard">
+                <div class="keyboard laptop-conector">
+                    <div class="connector">
+                    </div>
+                </div>
+                <div class="keyboard laptop-keys">
+                    <div class='kb-row '>
+                        <div class='k k-tld' id='kc-192' pre='~ ' suf=' '></div>
+                        <div class='k k-1' id='kc-49' pre='! ' suf='1 '></div>
+                        <div class='k k-2' id='kc-50' pre='@ ' suf='2 '></div>
+                        <div class='k k-3' id='kc-51' pre='# ' suf='3 '></div>
+                        <div class='k k-4' id='kc-52' pre='$ ' suf='4 '></div>
+                        <div class='k k-5' id='kc-53' pre='% ' suf='5 '></div>
+                        <div class='k k-6' id='kc-54' pre='^ ' suf='6 '></div>
+                        <div class='k k-7' id='kc-55' pre='&amp; ' suf='7 '></div>
+                        <div class='k k-8' id='kc-56' pre='* ' suf='8 '></div>
+                        <div class='k k-9' id='kc-57' pre=') ' suf='9 '></div>
+                        <div class='k k-0' id='kc-48' pre='( ' suf='0 '></div>
+                        <div class='k k-min' id='kc-189' pre='_' suf='- '></div>
+                        <div class='k k-eq' id='kc-187' pre='+' suf='='></div>
+                        <div class=' k k-del k-txt' id='kc-8' suf='delete '></div>
+                    </div>
+                    <div class='kb-row'>
+                        <div class='k k-tab k-txt ' id='kc-9' suf='tab '></div>
+                        <div class='k k-q ' id='kc-81' pre='q '></div>
+                        <div class='k k-w ' id='kc-87' pre='w '></div>
+                        <div class='k k-e ' id='kc-69' pre='e '></div>
+                        <div class='k k-r ' id='kc-82' pre='r '></div>
+                        <div class='k k-t ' id='kc-84' pre='t '></div>
+                        <div class='k k-y ' id='kc-89' pre='y '></div>
+                        <div class='k k-u ' id='kc-85' pre='u '></div>
+                        <div class='k k-i ' id='kc-73' pre='i '></div>
+                        <div class='k k-o ' id='kc-79' pre='o '></div>
+                        <div class='k k-p ' id='kc-80' pre='p '></div>
+                        <div class='k k-obrace ' id='kc-219'></div>
+                        <div class='k k-cbrace ' id='kc-221'></div>
+                        <div class='k k-bslash ' id='kc-220' pre='| ' suf='\ '></div>
+                    </div>
+                    <div class='kb-row '>
+                        <div class='k k-caps k-txt ' id='kc-20' pre='• ' suf='caps lock '></div>
+                        <div class='k k-a ' id='kc-65' pre='a '></div>
+                        <div class='k k-s ' id='kc-83' pre='s '></div>
+                        <div class='k k-d ' id='kc-68' pre='d '></div>
+                        <div class='k k-f ' id='kc-70' pre='f '></div>
+                        <div class='k k-g ' id='kc-71' pre='g '></div>
+                        <div class='k k-h ' id='kc-72' pre='h '></div>
+                        <div class='k k-j ' id='kc-74' pre='j '></div>
+                        <div class='k k-k ' id='kc-75' pre='k '></div>
+                        <div class='k k-l ' id='kc-76' pre='l '></div>
+                        <div class='k k-semi ' id='kc-186' pre=': ' suf='; '></div>
+                        <div class='k k-quot ' id='kc-222' pre=' "' suf=" '"></div>
+                        <div class='k k-return k-txt ' id='kc-13' pre='enter ' suf='return '></div>
+                    </div>
+                    <div class='kb-row '>
+                        <div class='k k-lshift k-txt ' id='kc-16L' suf='shift '></div>
+                        <div class='k k-z ' id='kc-90' pre='z '></div>
+                        <div class='k k-x ' id='kc-88' pre='x '></div>
+                        <div class='k k-c ' id='kc-67' pre='c '></div>
+                        <div class='k k-v ' id='kc-86' pre='v '></div>
+                        <div class='k k-b ' id='kc-66' pre='b '></div>
+                        <div class='k k-n ' id='kc-78' pre='n '></div>
+                        <div class='k k-m ' id='kc-77' pre='m '></div>
+                        <div class='k k-comma ' id='kc-188' pre='&lt; ' suf=', '></div>
+                        <div class='k k-period ' id='kc-190' pre='&gt; ' suf='. '></div>
+                        <div class='k k-fslash ' id='kc-191' pre='? ' suf='/ '></div>
+                        <div class='k k-rshift k-txt ' id='kc-16R' suf='shift'></div>
+                    </div>
+                    <div class='kb-row '>
+                        <div class='k k-func k-txt ' suf='fn '></div>
+                        <div class='k k-ctrl k-txt ' id='kc-17' suf='control '></div>
+                        <div class='k k-lopt k-txt ' id='kc-18L' pre='alt ' suf='option '></div>
+                        <div class='k k-lcmnd k-txt ' id='kc-91' pre='⌘ ' suf='Home '></div>
+                        <div class='k k-space ' id='kc-32'></div>
+                        <div class='k k-rcmnd k-txt ' id='kc-93' pre='⌘ ' suf='Home '></div>
+                        <div class='k k-ropt k-txt ' id='kc-18R' pre='alt ' suf='option '></div>
+                        <div class='k k-arr-udarr '>
+                            <div class="k-grid">
+                                <div class='k k-larr ' id='kc-37' pre='▸ '></div>
+                                <div class="k-up-down">
+                                    <div class='k k-uarr ' id='kc-38' pre='▾ '></div>
+                                    <div class='k k-darr ' id='kc-40' pre='▾ '></div>
+                                </div>
+                                <div class='k k-rarr ' id='kc-39' pre='▸ '></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" keyboard laptop-mousepad">
+                    <div class="mousepad">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+<div class="background">
+    <div class="container" id="container-background-keys">
+
+    </div>
+    <div class="container big-keys" id="container-background-big-keys">
+    </div>
+
+    <div class="container small-keys" id="container-background-small-keys">
+    </div>
+</div>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
+<script type="module" src="java.js"></script>
+<script type="module" src="phone.js"></script>
+
+</html>
