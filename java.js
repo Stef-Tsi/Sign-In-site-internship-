@@ -274,3 +274,14 @@ TwelfePayments.onclick = function() {
         document.getElementById('termsSevice').style.display = 'grid';
     }, 1);
 }
+
+document.querySelectorAll('.button-ready').forEach(button => button.addEventListener('click', e => {
+    if (!button.classList.contains('compress')) {
+
+        button.classList.add('compress');
+
+        setTimeout(() => button.classList.remove('compress'), 4000);
+
+    }
+    e.preventDefault();
+}));
