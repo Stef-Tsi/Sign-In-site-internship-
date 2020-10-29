@@ -46,13 +46,12 @@
 .phone-input-field {
   display: grid;
   grid-template-rows: 0.5fr repeat(6, 1fr);
+  place-items: center;
 }
 
 .phone-input-field h3 {
-  font-size: clamp(12px, 2.1vh, 5vh);
-  text-align: center;
+  font-size: clamp(1em, 1.2em, 5vh);
   color: #01ace4;
-  display: block;
 }
 
 .phone-input-field input,
@@ -66,13 +65,13 @@
   background-color: #01ace4;
   font-size: clamp(12px, 2.1vh, 5vh);
   color: white;
-  height: 55%;
+  height: 65%;
   width: 80%;
   border-radius: 12px;
 }
 
-.phone-input-field select {
-  height: 70%;
+.phone-input-field button {
+  height: 50%;
 }
 
 .phone-input-field button {
