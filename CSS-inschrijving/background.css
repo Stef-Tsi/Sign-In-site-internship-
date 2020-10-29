@@ -1,14 +1,7 @@
-.container {
-    position: absolute;
+.container{
+    margin: 0 auto;
     height: 100%;
-    width: 100%;
-    top: -120px;
-    left: -120px;
-    z-index: 2;
-}
-
-.container div{
-    position: absolute;
+    width: 1500px;
 }
 
 .container div.key:nth-child(1)
@@ -205,3 +198,137 @@ angle-shadow
     -khtml-user-select:      none;
     -o-user-select:      none;
 }
+main{
+    padding: 5%
+}
+.flex{
+    display: flex;
+    justify-content: space-around;
+}
+.flex .grid-4{
+    width:  33.33%;
+    padding: 10px;
+    height: 310px;
+}
+.grid-4{
+    display: flex;
+    justify-content: center;
+    background-color: rgba( 0, 0,0, 0.2);
+    border-radius: 5px;
+    margin: 10px;
+    position: relative;
+}
+.grid-6{
+    width: 50%;
+    display: flex;
+    margin: auto;
+}
+.feature i{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5%;
+    color: white;
+}
+.feature{
+    text-align: center;
+}
+.feature--content{
+    margin: 20px;
+}
+.feature--cta{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 1em;
+}
+.btn--blk{
+    text-decoration: none;
+    color: #fff;
+    background-color: #01ace4;
+    line-height: 40px;
+    padding: 0 20px;
+    border-radius: 20px;
+    font-size: .75rem;
+    font-weight: 700;
+    width: 100%;
+    font-size: large;
+    font-weight: bold;
+}
+.btn--blk:hover{
+    background-color: #fff;
+    color: #01ace4;
+}
+.log-in-button{
+    text-decoration: none;
+    color: #fff;
+    background-color: #01ace4;
+    line-height: 40px;
+    padding: 0 20px;
+    border-radius: 20px;
+    font-size: .75rem;
+    font-weight: 700;
+    font-size: large;
+    font-weight: bold;
+    position: absolute;
+    top:10%;
+    right:12%;
+    text-decoration: none; 
+}
+.log-in-button:hover{
+    background-color: #0479a0;
+}
+
+.school-card:hover{
+    transform: rotateY(180deg);
+}
+
+
+
+
+/* flipeffect */
+.flip-card {
+    width: 400px;
+    height: 350px;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 8px 4px 8px 4px rgba(0,0,0,0.2);
+  }
+
+  .flip-card-inner i{
+      margin-top: 2%;
+      margin-bottom: 5%;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  
+  .flip-card-back {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    transform: rotateY(180deg);
+  }
+  /* end flipeffect */
+
