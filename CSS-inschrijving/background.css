@@ -1,7 +1,7 @@
 .container{
     margin: 0 auto;
     height: 100%;
-    width: 1500px;
+    max-width: 100%;
 }
 
 .container div.key:nth-child(1)
@@ -191,12 +191,11 @@ angle-shadow
 
     transition: 0.1s;
 
-    -webkit-user-select:      none;
+    -webkit-user-select: none;
     -moz-user-select: -moz-none;
-    user-select:      none;
-
-    -khtml-user-select:      none;
-    -o-user-select:      none;
+    user-select: none;
+    -khtml-user-select: none;
+    -o-user-select: none;
 }
 main{
     padding: 5%
@@ -274,18 +273,16 @@ main{
     position: absolute;
     top:10%;
     right:12%;
-    text-decoration: none; 
+    text-decoration: none;
+    background: linear-gradient(to right, #01ace4, #0479a0);
 }
 .log-in-button:hover{
-    background-color: #0479a0;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
 .school-card:hover{
     transform: rotateY(180deg);
 }
-
-
-
 
 /* flipeffect */
 .flip-card {
