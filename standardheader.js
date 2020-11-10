@@ -1,6 +1,10 @@
 window.onscroll = function() {
     scrollFunction()
-};
+}
+
+window.onload = function(){
+    slideDown();
+}
 
 function scrollFunction() {
     if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
@@ -10,4 +14,10 @@ function scrollFunction() {
         document.getElementById("headerbackground").style.height = "100%";
         document.getElementById("header").style.height = "14%";
     }
-  }
+}
+
+function slideDown(){
+    $("#headerbanner").animate({
+        "top": "0"
+    },1800);
+}
