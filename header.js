@@ -22,8 +22,3 @@ function slideDown(){
         "top": "0"
     },1800);
 }
-function homepage(){
-    window.location.href("https://www.google.com");
-}
-
-document.getElementById("headerbanner").addEventListener("click", homepage());

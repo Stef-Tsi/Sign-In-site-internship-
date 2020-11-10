@@ -300,6 +300,7 @@ main{
     transition: transform 0.6s;
     transform-style: preserve-3d;
     box-shadow: 8px 4px 8px 4px rgba(0,0,0,0.2);
+    border-radius: 5%;
   }
 
   .flip-card-inner i{
@@ -317,16 +318,21 @@ main{
     height: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+    background-color: rgba(255, 255, 255, .7);
+    border-radius: 5%;
   }
-  
-  .flip-card-front {
-    background-color: rgba(0, 0, 0, 0.2);
-  }
-  
+
   .flip-card-back {
-    background-color: rgba(0, 0, 0, 0.2);
-    color: white;
     transform: rotateY(180deg);
   }
+  .flip-card:hover{
+    cursor: pointer;
+  }
   /* end flipeffect */
-
+  p{
+      color: #01ace4;
+  }
+  .flip-card p{
+      font-weight: bold;
+      font-size: 1.15em;
+  }
