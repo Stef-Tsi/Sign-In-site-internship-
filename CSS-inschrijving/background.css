@@ -200,22 +200,12 @@ angle-shadow
 main{
     padding: 5%
 }
-.flex{
+.flex {
     display: flex;
     justify-content: space-around;
-}
-.flex .grid-4{
-    width:  33.33%;
+    width: 100%;
     padding: 10px;
     height: 310px;
-}
-.grid-4{
-    display: flex;
-    justify-content: center;
-    background-color: rgba( 0, 0,0, 0.2);
-    border-radius: 5px;
-    margin: 10px;
-    position: relative;
 }
 .grid-6{
     width: 50%;

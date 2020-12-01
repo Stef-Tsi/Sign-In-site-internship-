@@ -4,34 +4,64 @@
     <title>Home</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="CSS-inschrijving/background.css">
-    <link rel="stylesheet" href="CSS-inschrijving/header.css">
-    <link rel="stylesheet" href="CSS-inschrijving/animations/pageAnimation.css">
-    <link rel="stylesheet" href="CSS-inschrijving/laptop/laptop.css">
-    <link rel="stylesheet" href="CSS-inschrijving/laptop/page1.css">
-    <link rel="stylesheet" href="CSS-inschrijving/laptop/page2.css">
-    <link rel="stylesheet" href="CSS-inschrijving/laptop/page3.css">
-    <link rel="stylesheet" href="CSS-inschrijving/phone.css">
+    <link rel="stylesheet" href="kek.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+
 </head>
 <body>
-    <header id="header"> 
-        <img src="https://www.thehouseoftyping.nl/assets/dist/images/layout/background.jpg" class="headerbackground" id="headerbackground">
-        <img src="https://www.thehouseoftyping.nl/assets/dist/images/layout/banner-eco-house-of-typing.png" class="headerbanner" id="headerbanner">
-        <a class="log-in-button" href="https://www.typeworld.nl/kids/inloggen/"><i class="fas fa-sign-in-alt"></i> Inloggen</a >
+<div class="body-container">
+    <header> 
+            <div class="my-element-to-clip">
+                <div class="header-text"></div>
+            </div>
+          
+            <div class="header-container">
+
+                <div class="header-nav">
+                    <div class="nav">
+                        <a href="#"><span class="fas fa-book"> Algemeen</span></a>
+                        <a href="#"><span class="fas fa-info"> Info docenten</span></a>
+                        <a href="#"><span class="fas fa-user-graduate"> Info cursist</span></a>
+                    </div>
+
+                    <div class="logo">
+                        <img src="https://www.thehouseoftyping.nl/assets/dist/images/layout/banner-eco-house-of-typing.png" alt="img" width="12%" style="position: absolute;" >
+
+                    </div>
+
+                    <div class="nav">
+                        <a href="#"><span class="far fa-keyboard"> Proefles</span></a>
+                        <a href="sign.html"><span class="fas fa-file-signature"> Inschrijven</span></a>
+                        <a href="#"><span class="fas fa-sign-in-alt"> Inloggen</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <svg width="0" height="0">
+                <defs>
+                  <clipPath id="myCurve" clipPathUnits="objectBoundingBox">
+                    <path
+                      d="M 0,1
+                                              L 0,0
+                                              L 1,0
+                                              L 1,1
+                                              C .65 .5, .35 .5, 0 1
+                                              Z"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+
     </header>
-    
-    <div class="bird-container bird-container--one">
-	    <div class="bird bird--one"></div>
-    </div>
 
     <main>
-        <div class="container">
+        <div class="grid-container">
             <div class="flex">
                 <div class="flip-card" id="informationforschools">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
-                                <i class="fas fa-graduation-cap fa-5x" style="color: white"></i>
+                                <i class="fas fa-graduation-cap fa-5x"></i>
                                 <h2 class="feature--title">Informatie voor <strong>scholen</strong></h2>
                                 <p class="feature--content">Typvaardigheid als onderdeel van 21st Century Skills aanbieden via uw school? Wij werken voor scholen. Ook voor úw school willen wij uw leerlingen typvaardig maken.</p>
                             </div>
@@ -51,7 +81,7 @@
                 <div class="flip-card" id="informationforstudents">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <i class="fas fa-users fa-5x" style="color: white"></i>
+                            <i class="fas fa-users fa-5x"></i>
                             <h2 class="feature--title">Informatie voor <strong>(toekomstige) cursisten</strong></h2>
                             <p class="feature--content">Wil jij typvaardig worden? Ga jij je vandaag inschrijven voor de training? Welkom bij onze House of Typing familie! Wij zijn er helemaal op ingesteld om jouw cursus tot een succes te maken.</p>
                         </div>
@@ -71,7 +101,7 @@
                 <div class="flip-card" id="inscribe">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <i class="fas fa-sign-in-alt fa-5x" style="color: white"></i>
+                            <i class="fas fa-sign-in-alt fa-5x"></i>
                             <h2 class="feature--title"><strong>Schrijf je hier in!</strong></h2>
                             <p class="feature--content">Ga van start of ga door met jouw typtraining door in te loggen binnen jouw eigen typewereld.</p>
                         </div>
@@ -90,29 +120,55 @@
             </div>
         </div>
     </main>
+
     <footer>
-        
+        <div class="footer-top">
+            <h1>DE NIEUWE NORM IN LEREN TYPEN</h1>
+            <p>© Econet 2020</p>
+            <img src="https://www.thehouseoftyping.nl/assets/dist/images/layout/banner-eco-house-of-typing.png" alt="img" width="9%" style="position: absolute; top: -10%;" >
+
+            <div>
+                <b>Contact gegevens:</b>
+                <p>Telefoon: 0165 - 31 88 32</p>
+                <p>Email: info@econet.nl</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <a href='https://www.thehouseoftyping.nl/downloads/algemene-voorwaarden.pdf'
+            rel='nofollow' class='col' target='_blank' title='Algemene voorwaarden'
+            >Algemene voorwaarden</a>
+            
+
+            <a href='https://www.thehouseoftyping.nl/downloads/klachtenreglement.pdf'
+            rel='nofollow' target='_blank' class='col' title='Klachtenreglement ECO'
+            >KlachtenreglementECO</a>
+
+             <a
+            href='https://www.thehouseoftyping.nl/downloads/klachtenprocedure.pdf'
+            rel='nofollow' class='col'target='_blank' title='Klachtenprocedure'>Klachtenprocedure</a>
+        </div>
+
     </footer>
-</body>
-<div class="background">
-    <div class="container" id="container-background-keys">
 
-    </div>
-    <div class="container big-keys" id="container-background-big-keys">
-    </div>
-
-    <div class="container small-keys" id="container-background-small-keys">
-    </div>
+    
 </div>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
-<script type="module" src="java.js"></script>
-<script type="module" src="phone.js"></script>
-<script type="module" src="header.js"></script>
 
-<script>
-    var ifs = document.getElementById("informationforschools");
-    ifs.onclick="location.href='https://www.thehouseoftyping.nl/scholen'"
-</script>
 
+      <div class="background">
+        <div class="container" id="container-background-keys">
+    
+        </div>
+        <div class="container big-keys" id="container-background-big-keys">
+        </div>
+    
+        <div class="container small-keys" id="container-background-small-keys">
+        </div>
+    </div>
+</body>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="module" src="kek.js"></script>
 </html>
